@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet'
+          type='text/css'>
+</head>
+
+<body id="">
+<header>
+    <nav>
+        <ul>
+            <li><h1><a href="#home">Providenzia capital group</a></h1></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="expertise.html">Expertise</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <div id="pdf">
+        <ul>
+            <li><a id="rapport" href="login.html">Rapport</a></li>
+            <li><a id="newsletter" target="_blank" href="downloadable/test.pdf">Newsletter</a></li>
+        </ul>
+
+    </div>
+    <div id="language">
+        <ul>
+            <li><a id="english" href="index.html">EN</a></li>
+            <li><a id="french" href="index-fr.html">FR</a></li>
+        </ul>
+
+
+    </div>
+</header>
+
+<main>
+    <section id="home" class="intro">
+        <div class="fullscreen_image" id="header_home">
+            <h2>Providenzia, <br/>
+                a long-term partnership with you</h2>
+            <a class="button" href="#contact">Contact us</a>
+
+            <span style="margin-top: -5rem;" class="exergue_solo">
+                Providenzia Capital Group (Suisse) S.A. is wholly dedicated to wealth management.
+                Our long-standing knowledge and expertise acquired throughout the years enable our clientele to
+                benefit from recognized wealth management competencies.</span>
+
+        </div>
+    </section>
+    <section id="about" class="blue gradient">
+        <div class="fullscreen">
+            <h2>About us</h2>
+            <div class="columns">
+                <div>
+                    <h3>History</h3>
+                    <p>Providenzia Capital Group (Suisse) S.A. was founded in January 2005 by a team of asset managers
+                        who
+                        gained their experience mainly in the financial market. </p>
+                </div>
+                <div>
+                    <h3>Knowing and Understanding</h3>
+                    <p>In a world which relentlessly becomes increasingly specialized, it is paramount to devote time to
+                        your partners to draw on their recognized field of expertise.</p>
+                </div>
+            </div>
+            <a class="button" href="about.html">Read more</a>
+        </div>
+    </section>
+    <section id="services" class="grey">
+        <div class="fullscreen" id="bg_one">
+            <h2>Expertise</h2>
+            <div class="columns">
+                <div>
+                    <h3>Wealth Management</h3>
+                    <p>Although traditional wealth management represents the cornerstone of our investment strategy, our
+                        philosophy is to deliver “Absolute Return” performance. Safeguarding the capital and its growth
+                        is
+                        our top priority.</p>
+                </div>
+                <div>
+                    <h3>Family Office</h3>
+                    <p>A distinct office, specifically dedicated to the need of a family, often represents an ideal
+                        response
+                        to the complex requirements of each family member.</p>
+                </div>
+                <div>
+                    <h3>The Institutional Asset Management Mandate</h3>
+                    <p>«Once bitten by volatility, twice shy». Academic research since the 90’s demonstrated that equity
+                        portfolios minimizing total risk have a superior return to capital weighted indices.</p>
+                </div>
+            </div>
+            <a class="button" href="expertise.html">Read more</a>
+
+        </div>
+    </section>
+
+    <section id="contact" class="blue">
+        <div class="fullscreen">
+            <h2>Contact us</h2>
+            <ul>
+                <li>2 rue de la Fontaine</li>
+                <li>1204 Geneva</li>
+                <li>Switzerland</li>
+                <br>
+                <li>Phone&#8239; +41 22 715 25 25</li>
+                <li>Fax&#8239;: +41 22 715 25 26</li>
+                <li><a href="http://www.providenzia.ch">www.providenzia.ch</a></li>
+                <li>Download information as&#8239;: <a href="downloadable/">vCard</a></li>
+            </ul>
+
+        </div>
+        <div id="map"></div>
+    </section>
+</main>
+
+<footer>
+    <p id="copyright"> Copyright © Providenzia Capital Group. All rights reserved</p>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+<script>
+    function initMap() {
+        var myLatLng = {lat: 46.202335, lng: 6.149685};
+        var center = {lat: 46.202335, lng: 6.149685};
+
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: center,
+            mapTypeControl: false,
+            navigationControl: false,
+            streetViewControl: false,
+            disableDefaultUI: true
+        });
+
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(46.202335, 6.149685),
+            map: map
+        });
+    }
+
+</script>
+</body>
+
+</html>

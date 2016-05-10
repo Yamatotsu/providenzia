@@ -1,0 +1,662 @@
+/*----------------------GENERAL---------------------------------*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'lato', serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    padding-left: 0;
+}
+
+#contact ul li{
+    line-height: 1.4rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+/*----------------------CLASSES---------------------------------*/
+
+.gradient {
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50, #1C323F), color-stop(100, #D61030));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+    /* W3C Markup */
+    background-image: linear-gradient(to bottom right, #1C323F 50%, #D61030 100%);
+}
+
+section#contact, section#private_investments {
+    overflow: hidden;
+}
+
+#contact .fullscreen {
+    padding-top: 0;
+    margin-bottom: -14rem;
+    margin-top: 14rem;
+}
+
+#contact {
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+}
+
+.exergue {
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    display: block;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 14rem;
+    margin-bottom: -14rem;
+}
+
+.fullscreen_image {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 14rem;
+    margin-bottom: -14rem;
+}
+
+.halfscreen {
+    width: 100vw;
+    height: 50vh;
+}
+
+.img_responsive {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.blue {
+    color: white;
+    background-color: #1c323f;
+}
+
+.grey {
+    color: white;
+    background-color: #474747;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columns div {
+    max-width: 25rem;
+    min-width: 12rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.columns .solo {
+    padding-top: 5rem;
+}
+
+.columns_intro h3, .columns_intro p {
+    width: 32%;
+    max-width: 25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 100vw;
+}
+
+.center h3 {
+    text-align: center;
+}
+
+.center p, .center ul {
+    margin: auto;
+    width: 40rem;
+}
+
+.center ul {
+    margin-top: 2.5rem;
+}
+
+.center li {
+}
+
+
+.underligned li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    display: inline-block;
+}
+
+.exergue_solo {
+    max-width: 35rem;
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    position: absolute;
+    margin-top: ;
+    margin-left: 10vw;
+}
+
+.active{
+    border-bottom: 1px solid white;
+}
+/*------------------------ID------------------------------*/
+
+#header_home {
+    background-image: url("img/background-01.png");
+    background-color: #1c323f;
+}
+
+#bg_one {
+    background-image: url("img/background-07.png");
+}
+
+#header_services {
+    background-image: url("img/background-02.png");
+}
+
+#header_services .exergue{
+    font-size: 1.5rem !important;
+    line-height: 2.2rem;
+}
+
+#bg_one_services {
+    background-image: url("img/background-06.png");
+    padding-bottom: 25rem;
+}
+
+#bg_two_services {
+    background-image: url("img/background-05.png");
+}
+
+#header_about {
+    background-image: url("img/background-03.png");
+}
+
+#bg_one_about {
+    background-image: url("img/background-05.png");
+    margin-bottom: 0;
+}
+
+/*----------------------HEADER---------------------------------*/
+
+*{
+    max-width: 100vw;
+}
+
+header {
+    background-color: rgba(28, 50, 63, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 94vw;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    z-index: 5;
+}
+
+header h1 a {
+    text-indent: -6666px;
+    display: block;
+    background-image: url("img/logo_providenzia.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11rem;
+    height: 2.5rem;
+}
+
+header > nav {
+    width: 70vw;
+
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -10%;
+}
+
+header > nav > ul li {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+header div#pdf {
+
+}
+
+header div#pdf div {
+
+}
+
+header div#language > ul {
+    display: flex;
+}
+
+header a {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+    font-size: 1.2rem;
+
+}
+
+header a:hover {
+    color: #D61030;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+header li a#english {
+    padding: 0.1vw 1vw 0.1vw 1vw;
+    background-color: #D61030;
+    border-right: 2px solid white;
+
+}
+
+header li a#french {
+    padding: 0.1vw 1vw 0.1vw 1vw;
+}
+
+header div#language a {
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header div#language a:hover {
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    background-color: white;
+}
+
+
+#header_home h2 +a{
+    position: absolute;
+    right: 20vw;
+    top:22vh;
+}
+
+#pdf li {
+    position: relative;
+    padding: 0.8rem;
+}
+
+#rapport::before {
+    content: '';
+    display: block;
+    background-image: url("img/rapport.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 5.8rem;
+    top: 0.7rem;
+}
+
+#newsletter::before {
+    content: '';
+    display: block;
+    background-image: url("img/newsletter.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 6.5rem;
+    top: 0.7rem;
+}
+
+/*-------------------------------MAIN-----------------------*/
+.intro h2 {
+    font-family: "Libre Baskerville" !important;
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+    max-width: 40rem;
+    text-align: left;
+    margin-left: 10vw;
+    margin-bottom: 10rem;
+}
+
+h2 {
+    margin-left: 10vw;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    font-size: 4.4rem;
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+#values {
+    padding-top: 0;
+    margin-bottom: -5rem;
+}
+
+#header_services h2 {
+    margin-bottom: 0rem;
+}
+
+#services ul h3 {
+    display: block;
+    margin-top: 5rem !important;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 0;
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.intro h3 {
+    margin-top: 7rem !important;
+}
+
+h4 {
+    font-family: "Libre Baskerville" !important;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+#header_services > p {
+    margin-left: 10vw;
+    max-width: 40rem;
+}
+
+p {
+    font-family: 'lato', serif;
+    line-height: 1.5rem;
+}
+
+a.button {
+    display: block;
+    width: 8rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    background: #D61030;
+    border: 2px solid white;
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+a.button:hover {
+    background-color: white;
+    border-color: #D61030;
+    color: #D61030;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#contact ul {
+    margin-top: 7rem;
+}
+
+#contact li {
+    text-align: left;
+    margin-left: 10vw;
+}
+
+#orange h2 {
+    font-size: 2rem !important;
+    font-family: 'Libre Baskerville', serif !important;
+    padding-top: 12rem;
+    color: white;
+}
+
+#bg_one_about {
+    margin-bottom: 0;
+    padding-top: 0
+}
+
+#bg_one_about .center{
+    padding-top: 14rem;
+}
+
+footer {
+    height: 1.5rem;
+    background-color: #D61030;
+}
+
+footer p{
+    margin-top:0;
+    margin-left: 10vw;
+    font-size: 0.7rem;
+}
+
+label,input{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: lato;
+    font-size: 1.5rem;
+    line-height:1.5rem;
+    margin-bottom:2rem;
+    color: white;
+}
+
+input:not(:last-of-type){
+    height:2rem;
+    width:20vw;
+}
+
+input:last-of-type{
+    height:2rem;
+    width:10vw;
+}
+
+input{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out ;
+    -ms-transition: all 0.5s ease-in-out ;
+    -o-transition: all 0.5s ease-in-out ;
+    transition: all 0.5s ease-in-out ;
+    background-color: transparent;
+    border: 1px solid white;
+    -webkit-border-radius:0.3rem;
+    -moz-border-radius:0.3rem;
+    border-radius:0.3rem;
+}
+
+input:hover{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out ;
+    -ms-transition: all 0.5s ease-in-out ;
+    -o-transition: all 0.5s ease-in-out ;
+    transition: all 0.5s ease-in-out ;
+    background-color: white;
+    color: #1c323f;
+}
+
+label{
+    font-family: lato;
+    font-size: 2rem;
+}
+
+/*--------------------MEDIA QUERIES---------------------*/
+
+@media (max-width: 1200px) {
+
+    .fullscreen {
+        min-height: 100vh;
+        height: 100%;
+        padding-top: 14rem;
+        padding-bottom: 14rem;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .columns p {
+        margin-bottom: 10vh;
+    }
+
+    .button {
+        margin-top: 10vh !important;
+        margin-bottom: 10vh;
+    }
+
+    h4 {
+        margin-top: 5rem;
+    }
+
+    .columns .solo {
+        padding-top: 5rem;
+    }
+
+    #bg_one_about, #bg_one_services {
+        background-image: none;
+        height: 100%;
+    }
+
+    #private_investments {
+        padding-top: 10rem;
+    }
+
+    .exergue_solo {
+        margin-left: 10vw;
+    }
+
+    .gradient {
+        background-image: none;
+    }
+
+    #bg_one_about, #private_investments {
+        /* IE10+ */
+        background-image: -ms-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+        /* Opera */
+        background-image: -o-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50, #1C323F), color-stop(100, #D61030));
+
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(top left, #1C323F 50%, #D61030 100%);
+
+        /* W3C Markup */
+        background-image: linear-gradient(to bottom right, #1C323F 50%, #D61030 100%);
+    }
+
+    #contact .fullscreen {
+        padding-bottom:0;
+    }
+
+    #map{
+        position: inherit;
+        width:100vw;
+        height: 50vh;
+    }
+
+    #header_home h2 +a {
+        position: absolute;
+        right: 30vw;
+        top: 75vh;
+    }
+
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .exergue_solo {
+        display: none;
+    }
+
+    header {
+        top: -17px;
+    }
+}
+
